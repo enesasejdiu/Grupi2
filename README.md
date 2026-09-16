@@ -1,5 +1,29 @@
-# Grupi2
+# rruga / Taxi booking MVP
 
-Qellimi: qe klienti kur te thirr nje taksist te mund te zgjedh llojin e vetures (rryma,benzin,diesel),te mund te zgjedh shoferin(femer,mashkull),te mund te zgjedh vendin e arritjes. Kompania duhet ta dije vendndodhjen edhe duhet tia dergpk disa te dhena per veturen dhe shoferin , cmimi, edhe kohen per sa arrin Taxi
-rikrijoma nje kesi lloji ideje 
-kemi per te ber nje projekt me github jemi 5 veta ne grup dhe shpjego qysh duhet me rikriju
+Aplikacion React + Vite për rezervim taksie. Klienti zgjedh destinacionin, llojin e veturës (elektrike, benzine ose diesel) dhe preferencën për shoferin. Paneli tregon një hartë vizuale, taksitë aktive, kohën e mbërritjes dhe çmimin e parashikuar.
+
+## Nisja lokale
+
+```bash
+npm install
+npm run dev
+```
+
+Kontrolle para push-it:
+
+```bash
+npm run lint
+npm run build
+```
+
+## Ndarja e punës për 5 anëtarë
+
+1. **Frontend / UX:** ekranet e klientit, responsive design dhe komponentët e formularit.
+2. **Backend / API:** autentikimi, përdoruesit, endpoint-et për kërkesë taksie dhe statusin e udhëtimit.
+3. **Database:** modelet për users, drivers, vehicles, rides dhe migrations.
+4. **Driver app:** paneli i shoferit, pranimi/refuzimi i kërkesës dhe përditësimi i lokacionit.
+5. **Company dashboard / QA:** paneli i kompanisë, çmimi/ETA, testet dhe dokumentimi.
+
+## Hapi tjetër teknik
+
+Ky version është frontend MVP me të dhëna demo. Për versionin real duhen backend-i, baza e të dhënave, GPS/maps API, pagesat dhe njoftimet live. Mos ruani API keys në GitHub; përdorni `.env` dhe shtoni `.env` në `.gitignore`.
